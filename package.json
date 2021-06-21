@@ -34,7 +34,6 @@
   "scripts": {
     "install": "node-gyp-build",
     "prebuild": "prebuildify --napi --tag-armv",
-    "prepack": "prebuildify-ci download && ([ $(ls prebuilds | wc -l) = '5' ] || (echo 'Some prebuilds are missing'; exit 1))",
     "test": "mocha --expose-gc -s 1000 -t 5000",
     "jshint": "jshint ."
   },
